@@ -1,37 +1,19 @@
+## ez-dom
 
+This is just for my personal use. Please look away. I am shame. (－‸ლ)
 
-<!-- Start src\ez-dom.es6 -->
-
-## Helpers
-
-### Examples:
-
-     ß.get(".myClass");
-
-## get(query, parent)
-
-Get an element by element name, class or id
-
-### Params:
-
-* *query* 
-* *parent* 
-
-### Return:
-
-* **Element** 
-
-## create(type)
-
-Retuns a new element of type
-
-### Params:
-
-* *type* 
-
-### Return:
-
-* **Element** 
-
-<!-- End src\ez-dom.es6 -->
-
+### examples
+    
+     // find in DOM
+     let a = ß('p');
+     let b = ß('#myDiv');
+     let c = ß('p.myClass');
+     
+     // create new node
+     let d = ß('<span>');
+     
+     // create new node with id
+     let d = ß('<span>#newId');
+     
+     // chainable
+     ß('#myDiv').append(ß('<span>#newId'));

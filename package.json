@@ -4,7 +4,7 @@
   "description": "A tiny dom manip library, for personal use",
   "main": "ez-dom.js",
   "scripts": {
-    "run": "gulp scripts"
+    "run": "gulp"
   },
   "repository": {
     "type": "git",

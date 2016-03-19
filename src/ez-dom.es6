@@ -1,32 +1,38 @@
 /**
  *
- * ### Examples:
  *
- *      ß.get(".myClass");
+ *
+ * ### Examples
+ * var a = ß('#myDiv') //
  *
  */
-class Helpers {
-    /**
-     *
-     * Get an element by element name, class or id
-     *
-     * @param query
-     * @param parent
-     * @returns {Element}
-     */
-    get(query, parent = document)
-    {
-        return parent.querySelector(query);
+let helpers = el => {
+
+    let element = (/\<.*\>/.test(el) ? create(el) : get(el));
+
+    element.append = el => {
+        element.appendChild(el);
+    };
+
+    return element;
+
+    function create(el) {
+
+        let newEl = document.createElement(
+            el.match(/\<(.*)\>/)[1]
+        );
+
+        if (el.match(/\#(.*)/) !== null)
+            newEl.id = el.match(/\#(.*)/)[1];
+
+        return newEl;
     }
 
-    /**
-     *
-     * Retuns a new element of type
-     * @param type
-     * @returns {Element}
-     */
-    create(name) {
-        return document.createElement(type);
+    function get(el) {
+        return (document.querySelector(el) === null ?
+            document :
+            document.querySelector(el));
     }
-}
-let ß = new Helpers();
+};
+
+let ß = helpers;
