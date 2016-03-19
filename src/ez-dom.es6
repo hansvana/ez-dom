@@ -1,3 +1,10 @@
+/**
+ *
+ * ### Examples:
+ *
+ *      ß.get(".myClass");
+ *
+ */
 class Helpers {
     /**
      *

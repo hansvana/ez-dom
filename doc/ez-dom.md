@@ -2,6 +2,12 @@
 
 <!-- Start src\ez-dom.es6 -->
 
+## Helpers
+
+### Examples:
+
+     ß.get(".myClass");
+
 ## get(query, parent)
 
 Get an element by element name, class or id
