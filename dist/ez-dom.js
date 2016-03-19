@@ -1,0 +1,1 @@
+"use strict";var helpers=function(e){function t(e){var t=document.createElement(e.match(/\<(.*)\>/)[1]);return null!==e.match(/\#(.*)/)&&(t.id=e.match(/\#(.*)/)[1]),t}function n(e){return null===document.querySelector(e)?document:document.querySelector(e)}var r=/\<.*\>/.test(e)?t(e):n(e);return r.append=function(e){r.appendChild(e)},r},ß=helpers;

@@ -1,21 +1,8 @@
-# ez-dom
 
-This is just for my personal use. Please look away. I am shame. (－‸ლ)
 
-### examples
-    
-```javascript
-// find in DOM
-let a = ß('p');
-let b = ß('#myDiv');
-let c = ß('p.myClass');
+<!-- Start src\ez-dom.es6 -->
 
-// create new node
-let d = ß('<span>');
+## helpers
 
-// create new node with id
-let d = ß('<span>#newId');
+<!-- End src\ez-dom.es6 -->
 
-// chainable
-ß('#myDiv').append(ß('<span>#newId'));
-```

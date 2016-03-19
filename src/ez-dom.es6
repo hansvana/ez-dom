@@ -1,11 +1,3 @@
-/**
- *
- *
- *
- * ### Examples
- * var a = ß('#myDiv') //
- *
- */
 let helpers = el => {
 
     let element = (/\<.*\>/.test(el) ? create(el) : get(el));
