@@ -1,9 +1,10 @@
-## ez-dom
+# ez-dom
 
 This is just for my personal use. Please look away. I am shame. (－‸ლ)
 
 ### examples
     
+    ```javascript
      // find in DOM
      let a = ß('p');
      let b = ß('#myDiv');
@@ -17,3 +18,4 @@ This is just for my personal use. Please look away. I am shame. (－‸ლ)
      
      // chainable
      ß('#myDiv').append(ß('<span>#newId'));
+    ```
