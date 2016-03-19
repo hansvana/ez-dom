@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const markdox = require('gulp-markdox');
+const concat = require('gulp-concat');
 
 gulp.task('scripts', ['doc'], () => {
     return gulp.src('src/ez-dom.es6')
@@ -15,5 +16,6 @@ gulp.task('scripts', ['doc'], () => {
 gulp.task('doc', () => {
     return gulp.src('src/ez-dom.es6')
         .pipe(markdox())
-        .pipe(gulp.dest('./doc'));
+        .pipe(concat('readme.md'))
+        .pipe(gulp.dest('./'));
 });
